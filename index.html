@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#26382f" />
+    <meta name="description" content="La boda de Rosa y Edgar" />
+    <title>Rosa & Edgar — Nuestra boda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Italiana&family=Parisienne&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <link rel="stylesheet" href="immersion.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <nav class="topbar" aria-label="Navegación de la invitación">
+      <a class="monogram-small" href="#inicio" aria-label="Ir al inicio">R<span>·</span>E</a>
+      <a class="nav-rsvp" href="#rsvp">Confirmar presencia <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5" /></svg></a>
+    </nav>
+
+    <audio id="wedding-song" preload="metadata" loop><source src="assets/un-pacto-con-dios.mp3" type="audio/mpeg" /></audio>
+    <button class="floating-player" type="button" data-audio-control aria-pressed="false" aria-label="Reproducir nuestra canción">
+      <span class="mini-disc"><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h4v14H8zm7 0h4v14h-4z" /></svg></span>
+      <span class="mini-copy"><small>Nuestra canción</small><strong>Un Pacto con Dios</strong></span>
+      <span class="song-progress" aria-hidden="true"><i></i></span>
+    </button>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-image reveal-image">
+          <img src="assets/images/hero-forest.jpeg" alt="Rosa y Edgar entre árboles" fetchpriority="high" />
+        </div>
+        <div class="hero-shade"></div>
+        <div class="hero-botanical hero-botanical--left" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="hero-botanical hero-botanical--right" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="hero-content">
+          <p class="eyebrow light">27 · 09 · 2026</p>
+          <div class="hero-names" aria-label="Rosa y Edgar"><span>Rosa</span><em>&amp;</em><span>Edgar</span></div>
+          <p class="hero-invite">Nos casamos</p>
+          <button class="hero-song-player" type="button" data-audio-control aria-pressed="false" aria-label="Reproducir nuestra canción">
+            <span class="player-disc" aria-hidden="true"><span class="disc-ring ring-one"></span><span class="disc-ring ring-two"></span><svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg><svg class="icon-pause" viewBox="0 0 24 24"><path d="M8 5h4v14H8zm7 0h4v14h-4z" /></svg></span>
+            <span class="player-copy"><small>Nuestra canción</small><strong>Un Pacto con Dios</strong></span>
+            <span class="player-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          </button>
+          <a href="#historia" class="scroll-cue"><span>Descubre nuestra historia</span><i></i></a>
+        </div>
+      </section>
+
+      <section class="intro section" id="historia">
+        <p class="eyebrow">Con amor, fe y gratitud</p>
+        <div class="intro-grid">
+          <div class="intro-copy reveal">
+            <h1>Una promesa,<br /><i>un para siempre.</i></h1>
+            <p>Después de cada camino recorrido, elegimos caminar juntos hacia una nueva historia.</p>
+            <blockquote>“Uno solo puede ser vencido, pero dos pueden resistir; la cuerda de tres hilos no se rompe fácilmente.”<cite>Eclesiastés 4:12</cite></blockquote>
+          </div>
+          <figure class="photo-frame photo-frame--tall reveal-image">
+            <img src="assets/images/walking.jpeg" alt="Rosa y Edgar caminando tomados de la mano" loading="lazy" />
+            <figcaption>Rosa & Edgar</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="parents section section-dark">
+        <div class="floral-mark ornament-branches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="eyebrow light">Con la bendición de Dios y de nuestros padres</p>
+        <h2 class="script-title light reveal">Nos acompañan</h2>
+        <div class="families">
+          <article class="family-card reveal">
+            <p class="card-label">Padres de la novia</p>
+            <h3>Valentina Romero<br />Santiago Camala</h3>
+          </article>
+          <div class="family-divider" aria-hidden="true"><span>R</span><i></i><span>E</span></div>
+          <article class="family-card reveal">
+            <p class="card-label">Padres del novio</p>
+            <h3>María Álvaro<br />José Álvaro</h3>
+          </article>
+        </div>
+        <div class="godparents reveal"><span>Nuestros padrinos</span><p>Alinary Contreras &nbsp;·&nbsp; Elmer Condori</p><p>Denis y esposa</p></div>
+      </section>
+
+      <section class="date-section section" id="celebracion">
+        <div class="date-top">
+          <p class="eyebrow">Reserva la fecha</p>
+          <h2 class="display-title reveal">Septiembre</h2>
+          <div class="date-lockup reveal"><span>Domingo</span><strong>27</strong><span>2026</span></div>
+        </div>
+        <div class="countdown-wrap reveal">
+          <p>Faltan</p>
+          <div class="countdown" aria-label="Cuenta regresiva"><div><strong id="days">00</strong><small>Días</small></div><i>:</i><div><strong id="hours">00</strong><small>Horas</small></div><i>:</i><div><strong id="minutes">00</strong><small>Minutos</small></div><i>:</i><div><strong id="seconds">00</strong><small>Segundos</small></div></div>
+        </div>
+        <figure class="wide-photo photo-frame reveal-image"><img src="assets/images\field.jpeg" alt="Rosa y Edgar caminando entre trigo" loading="lazy" /></figure>
+      </section>
+
+      <section class="events section" id="detalles">
+        <header class="section-header"><p class="eyebrow">El gran día</p><h2 class="display-title reveal">Celebramos</h2><p>Un día, dos síes y toda una vida.</p></header>
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <span class="event-number">01</span><span class="event-icon icon-chapel" aria-hidden="true"></span>
+            <p class="card-label">Ceremonia</p><h3>9:30 a. m.</h3><p>Nos reuniremos para dar inicio a nuestra promesa.</p>
+          </article>
+          <article class="event-card reveal">
+            <span class="event-number">02</span><span class="event-icon icon-glass" aria-hidden="true"></span>
+            <p class="card-label">Recepción</p><h3>12:00 p. m.</h3><p>Brindemos, celebremos y hagamos nuevos recuerdos.</p>
+          </article>
+          <article class="event-card reveal">
+            <span class="event-number">03</span><span class="event-icon icon-spark" aria-hidden="true"></span>
+            <p class="card-label">Despedida</p><h3>7:00 p. m.</h3><p>Gracias por ser parte de este capítulo tan especial.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="location section section-soft">
+        <div class="location-copy reveal">
+          <p class="eyebrow">Donde comienza la celebración</p>
+          <h2 class="display-title">Recepción</h2>
+          <p class="location-name">Av. Manco Cápac N° 167</p>
+          <p class="location-detail">Referencia: Paradero posta · San Jerónimo</p>
+          <a class="button" target="_blank" rel="noopener" href="https://maps.app.goo.gl/hdZ7Jad5BJRiHbKr8">Ver ubicación <span>↗</span></a>
+        </div>
+        <figure class="location-photo photo-frame reveal-image"><img src="assets/images\mountain-color.jpeg" alt="Rosa y Edgar frente a las montañas" loading="lazy" /></figure>
+      </section>
+
+      <section class="dress section">
+        <figure class="dress-photo photo-frame reveal-image"><img src="assets/images\sunlight.jpeg" alt="Una serenata bajo el sol" loading="lazy" /></figure>
+        <div class="dress-copy reveal"><p class="eyebrow">Código de vestimenta</p><h2 class="display-title">Formal</h2><img class="dress-illustration" src="assets/dress-code.png" alt="Ilustración de vestimenta formal" loading="lazy" /><div class="dress-line"></div><p><b>Damas</b><br />Vestido largo — evita blanco y verde.</p><p><b>Caballeros</b><br />Traje formal — evita beige.</p></div>
+      </section>
+
+      <section class="gift section section-dark">
+        <div class="gift-symbol gift-box" aria-hidden="true"><i></i><b></b><em></em></div>
+        <p class="eyebrow light">El mejor regalo es tu presencia</p>
+        <h2 class="script-title light reveal">Regalos</h2>
+        <p class="gift-copy reveal">Si deseas acompañarnos con un detalle adicional, lo recibiremos con mucho cariño.</p>
+        <div class="gift-info reveal"><span>BCP · Cuenta</span><strong>21507314609090</strong><small>Carmen Rosa Camala Romero</small></div>
+        <figure class="yape-qr reveal"><img src="assets/yape-qr.png" alt="Código QR de Yape para contribuir" loading="lazy" /><figcaption>Escanea para contribuir por Yape</figcaption></figure>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <div class="rsvp-picture reveal-image"><img src="assets/images\mountain-bw.jpeg" alt="Rosa y Edgar abrazados frente a la montaña" loading="lazy" /></div>
+        <div class="rsvp-panel">
+          <p class="eyebrow">Confirma tu asistencia</p>
+          <h2 class="display-title reveal">Te esperamos</h2>
+          <p>Tu presencia hará este día aún más especial. Por favor, confírmanos si podrás acompañarnos.</p>
+          <form class="rsvp-form" id="rsvp-form">
+            <label>Tu nombre y apellidos<input name="guest-name" type="text" required placeholder="Escribe tu nombre completo" /></label>
+            <fieldset><legend>¿Podrás acompañarnos?</legend><label class="choice"><input name="attendance" type="radio" value="Si" required /><span>Sí, ahí estaré</span></label><label class="choice"><input name="attendance" type="radio" value="No" required /><span>Esta vez no podré asistir</span></label></fieldset>
+            <button class="button button-dark" type="submit">Confirmar asistencia <span>↗</span></button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer><span class="monogram">R<span>·</span>E</span><p>Con amor, Rosa & Edgar</p><small>27 de septiembre de 2026</small><a class="creator-credit" href="https://wa.me/51900247055" target="_blank" rel="noopener">Diseño y desarrollo: Nelson · ¿Quieres una invitación así? Hablemos.</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
